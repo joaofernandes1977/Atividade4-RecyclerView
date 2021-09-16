@@ -6,29 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".TodosActivity">
 
-
     <EditText
-        android:id="@+id/rusultadoTodos"
+        android:id="@+id/todos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/testeRecy"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="150dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rusultadoTodos">
-
-    </androidx.recyclerview.widget.RecyclerView>
-
-
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

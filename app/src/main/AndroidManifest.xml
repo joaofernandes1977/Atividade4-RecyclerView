@@ -12,13 +12,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TrabalhoJsonAula">
         <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MatrixActivity"
+            android:exported="true" />
+        <activity
+            android:name=".GtaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TodosActivity"
+            android:exported="true" />
+        <activity
             android:name=".PostsActivity"
             android:exported="true" />
         <activity
             android:name=".UserActivity"
-            android:exported="true" />
-        <activity
-            android:name=".TodosActivity"
             android:exported="true" />
         <activity
             android:name=".TelaResultado"

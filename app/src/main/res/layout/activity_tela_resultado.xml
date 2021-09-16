@@ -8,11 +8,11 @@
     tools:context=".TelaResultado">
 
     <Button
-        android:id="@+id/todos"
+        android:id="@+id/todos1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
-        android:text="TODOS"
+        android:text="GTA V"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,18 +23,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="USERS"
+        android:text="MATRIX"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/todos" />
+        app:layout_constraintTop_toBottomOf="@+id/todos1" />
 
     <Button
         android:id="@+id/posts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="POSTS"
+        android:text="LOGIN"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

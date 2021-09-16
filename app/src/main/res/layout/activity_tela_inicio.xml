@@ -22,11 +22,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/ConstraintLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
-        android:text="By João Fernandes - 012187"
+        android:text="By João Fernandes - 0120187"
         android:textColor="#CDDC39"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,6 +42,6 @@
         android:textColor="#CDDC39"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/ConstraintLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

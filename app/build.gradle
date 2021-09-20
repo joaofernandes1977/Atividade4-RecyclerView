@@ -38,4 +38,6 @@ dependencies {
     implementation 'com.android.volley:volley:1.2.1'
     //implementation 'android.recyclerview:recyclerview:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    //picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
 }

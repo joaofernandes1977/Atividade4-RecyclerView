@@ -23,7 +23,7 @@ public class TelaResultado extends AppCompatActivity {
             chamada1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(TelaResultado.this, GtaActivity.class);
+                    Intent intent = new Intent(TelaResultado.this, TodosActivity.class);
                     startActivity(intent);
                 }
             }
@@ -32,7 +32,7 @@ public class TelaResultado extends AppCompatActivity {
             chamada1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(TelaResultado.this, MatrixActivity.class);
+                    Intent intent = new Intent(TelaResultado.this, UserActivity.class);
                     startActivity(intent);
                 }
             } );
@@ -40,7 +40,15 @@ public class TelaResultado extends AppCompatActivity {
             chamada1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(TelaResultado.this, LoginActivity.class);
+                    Intent intent = new Intent(TelaResultado.this, PostsActivity.class);
+                    startActivity(intent);
+                }
+            } );
+            chamada1 = findViewById(R.id.photos);
+            chamada1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(TelaResultado.this, PhotosActivity.class);
                     startActivity(intent);
                 }
             } );

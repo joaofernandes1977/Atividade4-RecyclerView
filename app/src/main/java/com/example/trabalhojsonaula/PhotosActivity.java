@@ -14,6 +14,7 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.android.volley.toolbox.ImageRequest;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.trabalhojsonaula.adapters.PhotosAdapter;
@@ -39,7 +40,11 @@ public class PhotosActivity extends AppCompatActivity implements Response.Listen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_photos);
         buscaJason();
-
+        //ImageView iv = findViewById(R.id.imageView);
+        //Picasso.get().load("https://loja.uniritteronline.com.br/media/logo/stores/35/UNIRITTER.png").into(iv);
+        //ImageView imageView = findViewById(R.id.imageView2);
+        //String url = "https://loja.uniritteronline.com.br/media/logo/stores/35/UNIRITTER.png";
+       // Picasso.get().load(url).into(imageView);
 
     }
     private void buscaJason(){
@@ -68,7 +73,7 @@ public class PhotosActivity extends AppCompatActivity implements Response.Listen
             PhotosAdapter adapter = new PhotosAdapter(photos);
             LinearLayoutManager llm = new LinearLayoutManager(this);
             LinearLayoutManager llm1 = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
-            StaggeredGridLayoutManager sglm = new StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.HORIZONTAL);
+            StaggeredGridLayoutManager sglm = new StaggeredGridLayoutManager(3,StaggeredGridLayoutManager.HORIZONTAL);
 
             rv.setLayoutManager(sglm);
             rv.setAdapter(adapter);

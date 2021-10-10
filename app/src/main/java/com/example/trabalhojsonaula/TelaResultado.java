@@ -52,6 +52,14 @@ public class TelaResultado extends AppCompatActivity {
                     startActivity(intent);
                 }
             } );
+            chamada1 = findViewById(R.id.star);
+            chamada1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(TelaResultado.this, StarActivity.class);
+                    startActivity(intent);
+                }
+            } );
 
         }
         private void IniciarComponentes(){

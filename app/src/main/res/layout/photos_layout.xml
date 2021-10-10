@@ -35,17 +35,25 @@
         app:layout_constraintTop_toBottomOf="@+id/photoId" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="178dp"
-        android:layout_height="264dp"
+        android:id="@+id/imagePhotos"
+        android:layout_width="109dp"
+        android:layout_height="148dp"
         android:layout_marginStart="130dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="14dp"
         android:layout_marginEnd="130dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tituloPhotos"
-        app:layout_constraintVertical_bias="0.369"
+        app:layout_constraintTop_toBottomOf="@+id/urlCaminho"
         tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/urlCaminho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/tituloPhotos"
+        app:layout_constraintTop_toBottomOf="@+id/tituloPhotos" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

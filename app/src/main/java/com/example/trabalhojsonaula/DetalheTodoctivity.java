@@ -9,7 +9,7 @@ import android.widget.TextView;
 import com.example.trabalhojsonaula.model.Todo;
 
 public class DetalheTodoctivity extends AppCompatActivity {
-
+/*
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,4 +23,5 @@ public class DetalheTodoctivity extends AppCompatActivity {
         tv = findViewById(R.id.tvTitulo);
         tv.setText(todo.getTitle());
     }
+*/
 }

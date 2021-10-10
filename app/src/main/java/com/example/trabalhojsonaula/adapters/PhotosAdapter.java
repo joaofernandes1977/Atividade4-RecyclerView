@@ -1,5 +1,7 @@
 package com.example.trabalhojsonaula.adapters;
 
+import static com.example.trabalhojsonaula.R.layout.photos_layout;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -51,26 +53,21 @@ public class PhotosAdapter extends RecyclerView.Adapter<PhotosAdapter.ViewHolder
         tv = holder.view.findViewById(R.id.tituloPhotos);
         tv.setText(photos.getTitle());
 
+        TextView img = holder.view.findViewById(R.id.urlCaminho);
+        img.setText(photos.getUrl());
 
+        ImageView iv = holder.view.findViewById(R.id.imagePhotos);
+        Picasso.get().load(photos.getUrl()).into(iv);
 
-       // tv = holder.view.findViewById(R.id.bodyPosts);
-        //tv.setText(photos.getUrl());
+        //PASSANDO A MESMA URL "IMAGEM"
+        //Picasso.get().load("https://loja.uniritteronline.com.br/media/logo/stores/35/UNIRITTER.png").into(iv);
 
-
-
-
-        //TextView tv2 = holder.view.findViewById(R.id.tvTodoTitulo2);
-        //tv2.setText(dados.get(position).getId());
-
-        //TextView tv2 = holder.view.findViewById(R.id.tvTodoTitulo);
-        //tv2.setText(dados.get(position).getTitle());
-        //View tv1 = holder.view.findViewById(R.id.tNumber);
-        //tv1.setId(dados.get(position).getUser_id());
+        //PASSANDO AS URLs DIFERENTES OBS: NÃO DA ERRO QUANDO COMPILA SO NÃO APARECE NENHUMA IMAGEM
+        //ImageView iv = holder.view.findViewById(R.id.imagePhotos);
+        //Picasso.get().load(String.valueOf(img)).into(iv);
 
 
     }
-
-
 
 
     @Override
